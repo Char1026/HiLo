@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.algonquincollege.char1026.hiilo.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/hiLoTitle"
+        android:textColor="@android:color/white"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:text="@string/intro"
+        android:textColor="@color/colorTextLight" />
+
+    <EditText
+        android:id="@+id/userInput"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:backgroundTint="#ededed"
+        android:elevation="5dp"
+        android:ems="7"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:hint="@string/inputHint"
+        android:maxLines="1"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" />
+
+    <Button
+        android:id="@+id/guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/userInput"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="27dp"
+        android:background="@color/primaryLight"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/guessingBtn"
+        android:textColor="@color/colorTextDark" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:contentDescription="@string/duke1"-->
+        <!--android:elevation="24dp"-->
+        <!--android:maxHeight="190dp"-->
+        <!--android:maxWidth="190dp"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:src="@drawable/dukewavingcompetitor" />-->
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/guess"
+        android:layout_alignBottom="@+id/guess"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginEnd="27dp"
+        android:layout_marginLeft="43dp"
+        android:background="@color/primaryLight"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/resetBtn"
+        android:textColor="@color/colorTextDark" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/giveUp"
+        android:textColor="@color/colorTextLight"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
